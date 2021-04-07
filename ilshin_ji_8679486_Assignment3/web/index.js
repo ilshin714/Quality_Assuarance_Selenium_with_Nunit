@@ -246,7 +246,9 @@ function init(){
         var values = JSON.parse(localStorage.getItem("datas"));
         var output = "";
 
+
         for(var i = 0 ; i < values.length ; i++){
+            var url =  `http://www.jdpower.com/cars/${values[i].make}/${values[i].model}/${values[i].year}`
             html += `Seller Name: ${values[i].sellerName} <br>
                        Address: ${values[i].address} <br>
                        City: ${values[i].city} <br>
@@ -257,7 +259,7 @@ function init(){
                        Make: ${values[i].make} <br>
                        Model: ${values[i].model} <br>
                        year: ${values[i].year} <br>
-                       <a href="http://www.jdpower.com/cars/${values[i].make}/${values[i].model}/${values[i].year}">Click To See the Car</a>
+                       <a href="${url}">${url}</a>
                        <br>
                         `;
         }
