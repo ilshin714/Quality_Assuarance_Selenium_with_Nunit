@@ -12,69 +12,74 @@
     <meta charset="utf-8" />
     <title>Assignment 3</title>
     <link rel="stylesheet" href="index.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
     <script src="index.js"></script>
 
 </head>
 <body>
-
-    <div>
+<div class="container">
+    <h2>Assignment #3 – Automation Testing | Student Name – Ilshin Ji 8679486</h2>
+    <form>
+    <div class="form-group">
         <label for="txtSellerName">Seller Name: </label>
-        <input type="text" id="txtSellerName">
+        <input type="text" id="txtSellerName" class="form-control">
         <span id="txtSellerNameValidation" name="validation"></span>
     </div>
-
-    <div>
+    <div class="form-group">
         <label for="txtAddress">Address: </label>
-        <input type="text" id="txtAddress">
+        <input type="text" id="txtAddress" class="form-control">
         <span id="txtAddressValidation" name="validation"></span>
     </div>
-    <div>
+    <div class="form-group">
         <label for="txtCity">City: </label>
-        <input type="text" id="txtCity">
+        <input type="text" id="txtCity" class="form-control">
         <span id="txtCityValidation"></span>
     </div>
-    <div>
+    <div class="form-group">
         <label for="txtProvince">Province: </label>
-        <input type="text" id="txtProvince">
+        <input type="text" id="txtProvince" class="form-control">
         <span id="txtProvinceValidation" name="validation"></span>
     </div>
-    <div>
+    <div class="form-group">
         <label for="txtPostalCode">Postal Code: </label>
-        <input type="text" id="txtPostalCode">
+        <input type="text" id="txtPostalCode" class="form-control">
         <span id="txtPostalCodeValidation" name="validation"></span>
     </div>
-    <div>
+    <div class="form-group">
         <label for="txtPhoneNumber">Phone Number: </label>
-        <input type="text" id="txtPhoneNumber">
+        <input type="text" id="txtPhoneNumber" class="form-control">
         <span id="txtPhoneNumberValidation" name="validation"></span>
     </div>
-    <div>
+    <div class="form-group">
         <label for="txtEmail">Email Address: </label>
-        <input type="text" id="txtEmail">
+        <input type="text" id="txtEmail" class="form-control">
         <span id="txtEmailValidation" name="validation"></span>
     </div>
-    <div>
+    <div class="form-group">
         <label for="txtMake">Vehicle Make: </label>
-        <input type="text" id="txtMake">
+        <input type="text" id="txtMake" class="form-control">
         <span id="txtMakeValidation" name="validation"></span>
     </div>
-    <div>
+    <div class="form-group">
         <label for="txtModel">Vehicle Model: </label>
-        <input type="text" id="txtModel">
+        <input type="text" id="txtModel" class="form-control">
         <span id="txtModelValidation" name="validation"></span>
     </div>
-    <div>
+    <div class="form-group">
         <label for="txtYear">Vehicle Year: </label>
-        <input type="text" id="txtYear">
+        <input type="text" id="txtYear" class="form-control">
         <span id="txtYearValidation" name="validation"></span>
     </div>
-    <div>
-        <button id="btnSave">Save</button>
+    <div class="form-group">
+<!--        <button id="btnSave"></button>-->
+        <input type="button" id="btnSave" id="btnSave" class="btn btn-primary" value = "Save">
+        <input type="button" id="btnSearch" class="btn btn-info" value="Search">
     </div>
-    <input type="button" id="btnSearch" value="Search">
-
-
+    </form>
     <div id="result"></div>
+
+</div>
 </body>
 </html>

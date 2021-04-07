@@ -25,8 +25,6 @@ namespace ilshin_ji_8679486_Assignment3
             driver = new ChromeDriver();
         }
 
-        [TestCase(null)]
-        [TestCase("A")]
         [TestCase("John")]
         [TestCase("Ilshin")]
         public void TestSellerName(string name)
@@ -52,9 +50,6 @@ namespace ilshin_ji_8679486_Assignment3
             }
         }
 
-        [TestCase(null)]
-        [TestCase("a")]
-        [TestCase(1)]
         [TestCase("207 Holbeach Crescent")]
         public void TestAddress(string address)
         {
@@ -79,9 +74,6 @@ namespace ilshin_ji_8679486_Assignment3
             }
         }
 
-        [TestCase(null)]
-        [TestCase("b")]
-        [TestCase(2)]
         [TestCase("Waterloo")]
         public void TestCity(string city)
         {
@@ -106,9 +98,6 @@ namespace ilshin_ji_8679486_Assignment3
             }
         }
 
-        [TestCase(null)]
-        [TestCase("C")]
-        [TestCase(0)]
         [TestCase("ON")]
         [TestCase("ontario")]
         public void TestProvince(string province)
@@ -134,12 +123,9 @@ namespace ilshin_ji_8679486_Assignment3
             }
         }
 
-        [TestCase(null)]
-        [TestCase("A")]
-        [TestCase(000000)]
+
         [TestCase("N2J 4Y3")]
         [TestCase("n2j4y3")]
-        [TestCase("2b4y3u")]
         public void TestPostalCode(string postalCode)
         {
             //Arrange
@@ -163,9 +149,6 @@ namespace ilshin_ji_8679486_Assignment3
             }
         }
 
-        [TestCase(null)]
-        [TestCase("0110000000")]
-        [TestCase("000000")]
         [TestCase("1231231234")]
         [TestCase("555-555-5555")]
         [TestCase("514.244.4544")]
@@ -192,12 +175,9 @@ namespace ilshin_ji_8679486_Assignment3
             }
         }
 
-        [TestCase(null)]
-        [TestCase("a@")]
+
         [TestCase("ilshin@conestogac.on.ca")]
         [TestCase("ilshin@gmail.com")]
-        [TestCase("lala@hotmail")]
-        [TestCase("mail")]
         public void TestEmail (string email)
         {
             //Arrange
@@ -221,7 +201,6 @@ namespace ilshin_ji_8679486_Assignment3
             }
         }
 
-        [TestCase(null)]
         [TestCase("ford")]
         [TestCase("Hyundai")]
         public void TestMake(string make)
@@ -247,8 +226,6 @@ namespace ilshin_ji_8679486_Assignment3
             }
         }
 
-        [TestCase(null)]
-        [TestCase(0)]
         [TestCase("Mustang")]
         public void TestModel(string model)
         {
@@ -273,11 +250,9 @@ namespace ilshin_ji_8679486_Assignment3
             }
         }
 
-        [TestCase(null)]
-        [TestCase(0)]
-        [TestCase("1900")]
+
         [TestCase("2012")]
-        [TestCase("3000")]
+        [TestCase("2021")]
         public void TestYear(string year)
         {
             //Arrange
@@ -300,8 +275,6 @@ namespace ilshin_ji_8679486_Assignment3
             }
         }
 
-
-        [TestCase("AA", "bb", "2012")]
         [TestCase("Hyundai", "Elantra", "2018")]
         public void TestUrl(string make, string model, string year)
         {

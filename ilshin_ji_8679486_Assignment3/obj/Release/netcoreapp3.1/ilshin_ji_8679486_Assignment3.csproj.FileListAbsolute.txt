@@ -94,3 +94,4 @@ C:\Users\ilshin\Desktop\Level4\PROG2070 QA\03.Assignments\03.Assignment3\ilshin_
 C:\Users\ilshin\Desktop\Level4\PROG2070 QA\03.Assignments\03.Assignment3\ilshin_ji_8679486_Assignment3\ilshin_ji_8679486_Assignment3\obj\Release\netcoreapp3.1\ilshin_ji_8679486_Assignment3.dll
 C:\Users\ilshin\Desktop\Level4\PROG2070 QA\03.Assignments\03.Assignment3\ilshin_ji_8679486_Assignment3\ilshin_ji_8679486_Assignment3\obj\Release\netcoreapp3.1\ilshin_ji_8679486_Assignment3.pdb
 C:\Users\ilshin\Desktop\Level4\PROG2070 QA\03.Assignments\03.Assignment3\ilshin_ji_8679486_Assignment3\ilshin_ji_8679486_Assignment3\obj\Release\netcoreapp3.1\ilshin_ji_8679486_Assignment3.genruntimeconfig.cache
+C:\Users\ilshin\Desktop\Level4\PROG2070 QA\03.Assignments\03.Assignment3\ilshin_ji_8679486_Assignment3\ilshin_ji_8679486_Assignment3\obj\Release\netcoreapp3.1\ilshin_ji_8679486_Assignment3.csprojAssemblyReference.cache

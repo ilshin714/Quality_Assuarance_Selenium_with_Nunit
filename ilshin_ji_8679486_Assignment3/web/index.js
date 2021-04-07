@@ -15,7 +15,6 @@ function init(){
         datas = JSON.parse(localStorage.getItem("datas"));
     }
 
-
     var sellerName = document.getElementById("txtSellerName");
     var address = document.getElementById("txtAddress");
     var city = document.getElementById("txtCity");
@@ -84,7 +83,6 @@ function init(){
     phoneNumber.addEventListener('input', content =>{
         var phoneRegex = /^\(?([1-9]{1}[0-9]{2})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
         phoneNumber.value = content.target.value;
-
         var txtPhoneNumberValidation = document.getElementById("txtPhoneNumberValidation");
         var message = "";
         if(!phoneRegex.test(phoneNumber.value)){
