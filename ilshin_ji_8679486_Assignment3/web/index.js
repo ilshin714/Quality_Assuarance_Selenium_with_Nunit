@@ -1,4 +1,11 @@
-﻿window.onload = (event) => {
+﻿//// Project: IJAssignment03
+//// Purpose: Unit Test with Selenium of an application. PROG2070 Assignemnt03
+//// History:
+//// Created by Ilshin Ji April 7, 2021
+//// 
+
+
+window.onload = (event) => {
     init();
 };
 
@@ -24,7 +31,7 @@ function init(){
         sellerName.value = content.target.value;
         var txtSellerNameValidation = document.getElementById("txtSellerNameValidation");
         var message = "";
-        if(sellerName.value.length < 2){
+        if(sellerName.value.length < 2 || sellerName.value == ""){
             message = "Seller Name should be greater than 2 letters";
         }else{
 
@@ -36,7 +43,7 @@ function init(){
         address.value = content.target.value;
         var txtAddressValidation = document.getElementById("txtAddressValidation");
         var message = "";
-        if(address.value.length < 2){
+        if(address.value.length < 2 || address.value == ""){
             message = "Address Should be greater than 2 letters";
         }
         txtAddressValidation.innerHTML = message;
@@ -46,7 +53,7 @@ function init(){
         city.value = content.target.value;
         var txtCityValidation = document.getElementById("txtCityValidation");
         var message = "";
-        if(city.value.length < 2){
+        if(city.value.length < 2 || city.value == ""){
             message = "City is required";
         }
         txtCityValidation.innerHTML = message;
@@ -56,7 +63,7 @@ function init(){
         province.value = content.target.value;
         var txtProvinceValidation = document.getElementById("txtProvinceValidation");
         var message = "";
-        if(province.value.length < 2){
+        if(province.value.length < 2 || province.value == ""){
             message = "Province is required";
         }
         txtProvinceValidation.innerHTML = message;
@@ -75,7 +82,7 @@ function init(){
     });
 
     phoneNumber.addEventListener('input', content =>{
-        var phoneRegex = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+        var phoneRegex = /^\(?([1-9]{1}[0-9]{2})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
         phoneNumber.value = content.target.value;
 
         var txtPhoneNumberValidation = document.getElementById("txtPhoneNumberValidation");
@@ -103,7 +110,7 @@ function init(){
         make.value = content.target.value;
         var txtMakeValidation = document.getElementById("txtMakeValidation");
         var message = "";
-        if(make.value.length < 2){
+        if(make.value.length < 2  || make.value == ""){
             message = "Make is required";
         }
         txtMakeValidation.innerHTML = message;
@@ -113,7 +120,7 @@ function init(){
         model.value = content.target.value;
         var txtModelValidation = document.getElementById("txtModelValidation");
         var message = "";
-        if(model.value.length < 2){
+        if(model.value.length < 2  || model.value == ""){
             message = "Model is required";
         }
         txtModelValidation.innerHTML = message;
@@ -124,12 +131,14 @@ function init(){
         var yearRegex = /^[0-9]{4}$/;
         var txtYearValidation = document.getElementById("txtYearValidation");
         var message = "";
-        if(year.value.length < 4) {
+        var d = new Date();
+        var currentYear = d.getFullYear();
+        if(year.value.length < 4  || year.value == "") {
             message = "Year is required";
         }else if(!yearRegex.test(year.value)){
             message = "Please Type year";
-        }else if(parseInt(year.value) < 2012 ){
-            message = "Year should be greater than 2011";
+        }else if(parseInt(year.value) < 2000 || parseInt(year.value) > currentYear ){
+            message = `Year should be between 2000 and ${currentYear}`;
         }
 
 
