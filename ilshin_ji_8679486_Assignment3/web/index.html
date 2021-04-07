@@ -1,12 +1,74 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <title>Assignment 3</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
 
 </head>
 <body>
 
+    <div>
+        <label for="txtSellerName">Seller Name: </label>
+        <input type="text" id="txtSellerName">
+        <span id="txtSellerNameValidation" name="validation"></span>
+    </div>
+
+    <div>
+        <label for="txtAddress">Address: </label>
+        <input type="text" id="txtAddress">
+        <span id="txtAddressValidation" name="validation"></span>
+    </div>
+    <div>
+        <label for="txtCity">City: </label>
+        <input type="text" id="txtCity">
+        <span id="txtCityValidation"></span>
+    </div>
+    <div>
+        <label for="txtProvince">Province: </label>
+        <input type="text" id="txtProvince">
+        <span id="txtProvinceValidation" name="validation"></span>
+    </div>
+    <div>
+        <label for="txtPostalCode">Postal Code: </label>
+        <input type="text" id="txtPostalCode">
+        <span id="txtPostalCodeValidation" name="validation"></span>
+    </div>
+    <div>
+        <label for="txtPhoneNumber">Phone Number: </label>
+        <input type="text" id="txtPhoneNumber">
+        <span id="txtPhoneNumberValidation" name="validation"></span>
+    </div>
+    <div>
+        <label for="txtEmail">Email Address: </label>
+        <input type="text" id="txtEmail">
+        <span id="txtEmailValidation" name="validation"></span>
+    </div>
+    <div>
+        <label for="txtMake">Vehicle Make: </label>
+        <input type="text" id="txtMake">
+        <span id="txtMakeValidation" name="validation"></span>
+    </div>
+    <div>
+        <label for="txtModel">Vehicle Model: </label>
+        <input type="text" id="txtModel">
+        <span id="txtModelValidation" name="validation"></span>
+    </div>
+    <div>
+        <label for="txtYear">Vehicle Year: </label>
+        <input type="text" id="txtYear">
+        <span id="txtYearValidation" name="validation"></span>
+    </div>
+    <div>
+        <button id="btnSave">Save</button>
+    </div>
+    <input type="button" id="btnSearch" value="Search">
+
+
+    <div id="result"></div>
 </body>
 </html>
